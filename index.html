@@ -1,1 +1,89 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>B10615035</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(238, 238, 238);
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+        overflow-x: hidden;
+    }
+
+    .box {
+        position: relative;
+        padding: 150px 30px 40px 30px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 15px rgb(179, 179, 179);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pic_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        z-index: 1;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+
+    .pic {
+        height: 100px;
+        width: 100px;
+        border-radius: 55px;
+        border: 2px rgb(182, 182, 182) solid;
+        z-index: 4;
+    }
+
+    p {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 6em;
+        position: absolute;
+        z-index: 3;
+        top: 50px;
+        margin: 0;
+        color: rgba(184, 184, 184, 0.493);
+    }
+</style>
+
+<body>
+    <div class="box">
+        <h1>Hello</h1>
+        <img class="pic_bg" src="./3451413.jpg" alt="">
+        <img class="pic" src="./2088710004196b.jpg" alt="">
+        <p style="color: gray; font-size: 1.5em; font-weight: bold;">JingXuan Chen</p>
+        <p style="color: rgb(179, 179, 179); font-size: 1em;">B10615035</p>
+        <p style="color: gray;">
+            \(\begin{eqnarray} \label{eq}
+            \sigma(x)'&=&\frac{d}{dx}(1+e^{-x})^{-1} \nonumber \\
+            ~&=&-(1+e^{-x})^{-2}(-e^{-x}) \nonumber \\
+            ~&=& \frac{e^{-x}}{(1+e^{-x})^2} \nonumber \\
+            ~&=&\frac{1}{1+e^{-x}}\frac{e^{-x}}{1+e^{-x}} \nonumber \\
+            ~&=&\sigma(x)(1-\sigma(x))
+            \end{eqnarray}\)
+        </p>
+    </div>
+</body>
+
+</html>
