@@ -8,17 +8,14 @@
 </head>
 
 <style>
-    body {
+    .web {
         width: 100vw;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgb(238, 238, 238);
-        margin: 0;
-        padding: 0;
         font-family: arial;
-        overflow-x: hidden;
     }
 
     .box {
@@ -68,22 +65,25 @@
 </style>
 
 <body>
-    <div class="box">
-        <h1>Hello</h1>
-        <img class="pic_bg" src="./3451413.jpg" alt="">
-        <img class="pic" src="./2088710004196b.jpg" alt="">
-        <p style="color: gray; font-size: 1.5em; font-weight: bold;">JingXuan Chen</p>
-        <p style="color: rgb(179, 179, 179); font-size: 1em;">B10615035</p>
-        <p style="color: gray;">
-            \(\begin{eqnarray} \label{eq}
-            \sigma(x)'&=&\frac{d}{dx}(1+e^{-x})^{-1} \nonumber \\
-            ~&=&-(1+e^{-x})^{-2}(-e^{-x}) \nonumber \\
-            ~&=& \frac{e^{-x}}{(1+e^{-x})^2} \nonumber \\
-            ~&=&\frac{1}{1+e^{-x}}\frac{e^{-x}}{1+e^{-x}} \nonumber \\
-            ~&=&\sigma(x)(1-\sigma(x))
-            \end{eqnarray}\)
-        </p>
+    <div class="web">
+        <div class="box">
+            <h1>Hello</h1>
+            <img class="pic_bg" src="./3451413.jpg" alt="">
+            <img class="pic" src="./2088710004196b.jpg" alt="">
+            <p style="color: gray; font-size: 1.5em; font-weight: bold;">JingXuan Chen</p>
+            <p style="color: rgb(179, 179, 179); font-size: 1em;">B10615035</p>
+            <p style="color: gray;">
+                \(\begin{eqnarray} \label{eq}
+                \sigma(x)'&=&\frac{d}{dx}(1+e^{-x})^{-1} \nonumber \\
+                ~&=&-(1+e^{-x})^{-2}(-e^{-x}) \nonumber \\
+                ~&=& \frac{e^{-x}}{(1+e^{-x})^2} \nonumber \\
+                ~&=&\frac{1}{1+e^{-x}}\frac{e^{-x}}{1+e^{-x}} \nonumber \\
+                ~&=&\sigma(x)(1-\sigma(x))
+                \end{eqnarray}\)
+            </p>
+        </div>
     </div>
+    
 </body>
 
 </html>
