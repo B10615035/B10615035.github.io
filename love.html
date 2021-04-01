@@ -1,0 +1,463 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+            overflow-x: hidden;
+            background-color: rgb(255, 239, 241);
+        }
+
+        .head {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .title {
+            width: 600px;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 3em;
+            border-top: 5px solid rgb(177, 177, 177);
+            border-bottom: 5px solid rgb(177, 177, 177);
+            color: black;
+        }
+
+        .box_bg {
+            position: relative;
+            height: 500px;
+            margin-bottom: 50px;
+        }
+
+        .box {
+            height: 500px;
+            width: 70%;
+            margin-left: 50px;
+            box-shadow: -5px 5px 15px gray;
+            position: absolute;
+            left: 0;
+            border-radius: 20px;
+        }
+
+        .box2 {
+            height: 500px;
+            width: 70%;
+            margin-right: 50px;
+            box-shadow: 5px 5px 15px gray;
+            position: absolute;
+            right: 0;
+            border-radius: 20px;
+        }
+
+        .box3 {
+            height: 500px;
+            width: 70%;
+            margin-right: 50px;
+            box-shadow: 5px 5px 15px gray;
+            position: absolute;
+            right: 0;
+            border-radius: 20px;
+            background: url('./img/e999aae68891night.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box4 {
+            height: 500px;
+            width: 70%;
+            margin-left: 50px;
+            box-shadow: -5px 5px 15px gray;
+            position: absolute;
+            left: 0;
+            border-radius: 20px;
+            background: url('./img/kiss_cut.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        p {
+            font-size: 1.5em;
+            z-index: 1;
+            color: white;
+        }
+
+        .content {
+            padding: 0 30px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            /* background-color: palegoldenrod; */
+            box-sizing: border-box;
+        }
+
+        .content p {
+            margin-left: 20%;
+        }
+
+        .content .p2 {
+            position: absolute;
+            right: 10%;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+        .img1 {
+            height: 300px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .img2 {
+            height: 350px;
+            object-fit: cover;
+            margin-left: 10%;
+        }
+
+        .img3 {
+            position: absolute;
+            right: calc(5% + 40px);
+            top: -20px;
+            width: 470px;
+            height: 420px;
+        }
+
+        .img4 {
+            position: absolute;
+            right: 5%;
+            top: 160px;
+            width: 320px;
+            height: 320px;
+        }
+
+        .img5 {
+            height: 300px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+
+        @media screen and (max-width: 1420px) {
+            .box3 {
+                background: url('./img/e999aae68891night_2.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .box4 {
+                background: url('./img/kiss_cut_2.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .content p {
+                margin-left: 12%;
+            }
+
+            .img3 {
+                right: calc(5% + 40px);
+                top: 30px;
+                width: 370px;
+                height: 320px;
+            }
+
+            .img4 {
+                right: 5%;
+                top: 180px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .img2 {
+                height: 230px;
+                margin-left: 0%;
+            }
+        }
+
+        @media screen and (max-width: 940px) {
+            .box_bg {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                position: relative;
+                margin-left: 0;
+            }
+
+            .box4 {
+                position: relative;
+                margin-left: 0;
+            }
+
+            .box3 {
+                background: url('./img/e999aae68891night_3.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: relative;
+                margin-right: 0;
+            }
+
+            .box2 {
+                position: relative;
+                margin-right: 0;
+            }
+
+            .img1 {
+                right: 0;
+                left: auto;
+                height: 150px;
+            }
+
+            .content .p2 {
+                position: relative;
+                margin: auto;
+                right: auto;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            .content {
+                justify-content: center;
+            }
+
+            .content p {
+                margin-left: 0;
+            }
+
+            .img5 {
+                height: 200px;
+            }
+
+            .img2 {
+                height: 150px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .box4 {
+                background: url('./img/kiss_cut_3.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .img3 {
+                right: calc(5% + 30px);
+                top: auto;
+                bottom: -10px;
+                width: 185px;
+                height: 155px;
+            }
+
+            .img4 {
+                top: auto;
+                right: 0;
+                bottom: 0;
+                width: 130px;
+                height: 130px;
+            }
+
+        }
+
+        @media screen and (max-width: 630px) {
+            .box3 {
+                background: url('./img/e999aae68891night_4.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .box4 {
+                background: url('./img/kiss_cut_5.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .img5 {
+                height: 150px;
+            }
+        }
+
+        section {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        span {
+            position: absolute;
+            /* pointer-events: none; */
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scale(0) translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1) translateY(-500%) rotate(360deg);
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section></section>
+
+    <div class="head">
+        <p class="title">To My Love 13</p>
+    </div>
+
+    <div class="box_bg">
+        <div class="box2" style="background: #79dfb1;">
+            <div class="content">
+                <img class="img1" src="./img/zuvio2.jpg" alt="">
+                <p class="p2">
+                    2021/1/13</br></br>我們在Zuvio上認識</br></br>當時我們是三日cp</br></br>我不知道我們可以聊多久</br></br>畢竟我是個很難聊的人</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box_bg">
+        <div class="box"
+            style="background: url('./img/coolHue-F6D242-FF52E5.png'); background-repeat: no-repeat; background-size: cover;">
+            <div class="content">
+                <p>2021/1/21</br>
+                    那天半夜妳說 ...</br>說不會再玩Zuvio了</br>
+                    看到訊息時</br>我內心非常失落</br>
+                    以為再也找不到妳了</br>
+                    但妳還在</br>
+                    於是我們交換了IG</br>
+
+                </p>
+                <img class="img3" src="./img/img3.PNG" alt="">
+                <img class="img4" src="./img/img4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="box_bg">
+        <div class="box3" style="">
+            <div class="content">
+                <p class="p2" style="margin-top: 100px;">我們的對話常常都是妳的一句 “陪我" 開始</br></br>
+
+                    而且幾乎都是在很晚的時候</br></br>
+
+                    但還好我們的睡覺時間都很晚!</p>
+            </div>
+        </div>
+    </div>
+    <div class="box_bg">
+        <div class="box" style="background: #ffd646;">
+            <div class="content">
+                <p>2021/2/27</br></br>
+                    我們第一次的見面</br></br>
+
+                    去買 PUI PUI 還有看了電影</br></br>
+
+                    我一直很怕沒有話聊</br></br>
+
+                    但還好沒有太尷尬</p>
+                <img class="img5" src="./img/e5a4a9e7abbae9bca0e8bb8ae8bb8a2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="box_bg">
+        <div class="box2" style="background: #ffaec8;">
+            <div class="content">
+                <img class="img2" src="./img/line-love-4.png" alt="">
+                <p class="p2">2021/3/3</br></br>
+                    半夜我們成為了男女朋友</br></br>
+
+                    雖然是在 line 上面告白的</br></br>
+
+                    但當時我的心情很亢奮睡不太著</br></br>
+
+                    甚至一直到隔天</p>
+            </div>
+        </div>
+    </div>
+    <div class="box_bg">
+        <div class="box4">
+            <div class="content">
+                <p>2021/3/5</br></br>
+                    交往後的第一次約會</br></br>
+
+                    我們把士林夜市繞了一圈</br></br>
+
+                    然後妳帶我到士林官邸附近</br></br>
+
+                    在那裡也是我們第一次的接吻</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const color = [
+        '#ffc0cb',
+        '#ffaab8',
+        '#ff8da0',
+        '#ff758c',
+        '#ff4c6a',
+        '#ff2222'
+    ]
+
+    function createSquare() {
+        const section = document.querySelector('section')
+        const square = document.createElement('span')
+
+        var size = Math.random() * 20;
+
+        square.style.width = 10 + size + 'px';
+        square.style.height = 10 + size + 'px';
+
+        square.style.top = Math.random() * innerHeight + 'px'
+        square.style.left = Math.random() * innerWidth + 'px'
+        square.style.clipPath =
+            "polygon(50% 29%, 55% 21%, 63% 11%, 71% 7%, 82% 8%, 93% 13%, 98% 22%, 99% 36%, 96% 48%, 90% 59%, 83% 67%, 74% 77%, 67% 85%, 59% 92%, 50% 98%, 42% 91%, 33% 82%, 25% 73%, 16% 64%, 8% 51%, 3% 40%, 1% 28%, 4% 18%, 11% 10%, 21% 7%, 34% 9%, 44% 17%)"
+
+        const bg = color[Math.floor(Math.random() * color.length)]
+
+        square.style.background = bg
+
+        section.appendChild(square);
+
+        setTimeout(() => {
+            square.remove()
+        }, 5000);
+
+    }
+    setInterval(createSquare, 150);
+</script>
+
+</html>
